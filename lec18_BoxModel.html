@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        /* Applies to all which contains class= box */
+        .box{
+            background-color: lavender;
+        }
+        /* Applies to anly box1 */
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 100px;
+            /* next line means height is 100 including content border and padding. if not writing next line then it means only content is 100px */
+            box-sizing: border-box ; 
+        }
+        .box2{
+            color: green;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 100px;
+            /* next line means height is 100 including content border and padding. if not writing next line then it means only content is 100px */
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I'm a div with class= box </div>
+    <div class="box box1">I'm a div with class= box and box1 </div>
+    <div class="box2 box3">I'm a div with class= box1 and box2</div>
+</body>
+</html>

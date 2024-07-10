@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: rgb(138, 138, 185);
+        } 
+        /* Class Selector */
+        .lavender{ 
+            background-color: lavender;
+        }
+        /* ID Selector */
+        #pink{
+            background-color: rgb(194, 152, 159); 
+        }
+
+        /* Child Selector */
+        /* div > article > p{
+            color: brown;
+            background-color: rgb(138, 167, 138);
+        } */
+
+        /* Descendant Selector */
+        div p {
+            background-color: rgb(180, 180, 126);
+        }
+        /* Universalt Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            background-color: rgb(127, 127, 175);
+        }
+        a:hover{
+            background-color: rgb(213, 214, 101);
+        }
+        /* p:first-child{
+            background-color: gray;
+        } */
+    </style>  
+</head>
+<body>
+    <main>
+        <p>I'm para 1</p>
+        <p>I'm para 2</p>
+    </main>
+    <div>
+        Hello. I'm div no. 0
+        <article>
+            <p>
+                Div 0- paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem? Iure quis eaque maiores officiis alias nisi molestiae tenetur in.
+            </p>
+        </article>
+    </div>
+
+    <div class="lavender">
+        Hello, I'm div no. 1
+    </div>
+    <div class="selector">
+        I'm Selector class of div 2. I'm purple because im in div
+    </div>
+
+    <div id="pink">
+        Hello. I'm div no. 3
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.youtube2.com">YouTube</a>
+</body>
+</html>

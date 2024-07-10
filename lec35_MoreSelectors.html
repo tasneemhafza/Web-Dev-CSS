@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: lavender;
+        } */
+        /* .box::first-line{
+            color:pink
+        } */
+        .box::first-letter{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        .box:nth-child(even){
+            background-color: beige;
+            color: cadetblue;
+        }
+        .box:nth-last-child(3){
+            background-color: bisque;
+        }
+        /* .boxes *{
+            color: pink;
+            border: 2px solid black;
+            padding: 10px 20px;
+        } */
+        /* p, a, .box, [data-color="primary"]{
+            margin-top: 40px;
+            padding-top: 40px;
+        } */
+        /* Pseudo elements. Dynamically inserting in  CSS*/
+        .boxes::before{
+            content: "Im good and before";
+        }
+        .boxes::after{
+            content: "Im good and after";
+            color: purple;
+        }
+        /* .boxes::selection{
+            color: gray;
+        } */
+        ::selection{
+            background-color: yellow;
+            color: red;
+        }
+        input::placeholder{
+            color:purple;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I'm the box1.</div>
+        <div class="box">Hey I'm the box2</div>
+        <div class="box">Hey I'm the box3</div>
+        <input type="text" placeholder="Type Your Name Here: ">
+    </div>
+</body>
+</html>

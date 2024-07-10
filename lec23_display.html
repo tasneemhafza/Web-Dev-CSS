@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       } 
+        .box{
+            border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            width: 100px; 
+            /* with inline block we can use width */
+            padding: 45px;
+            margin: 34px;
+        }
+        .box1{
+            /* display: none; */
+            /* display none removes data and space */
+            /* visibility: hidden; */
+            /* visiblity hodden only removes data but stores space */
+            display: flex;
+            justify-content:center;
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        Im a div
+    </div>
+    <div class="box">and a good box</div>
+    <span>Im a good</span>
+    <span>girl</span>
+</body>
+</html>

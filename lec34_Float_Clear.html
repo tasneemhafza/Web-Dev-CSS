@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        img{
+            /* float: right; */
+            float: left;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 1px solid rgb(115, 115, 169);
+        }
+        .card:nth-child(3){
+            background-color: lavender;
+            clear: right;
+            /* clear: both; */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="200px" src="https://i.pinimg.com/236x/b3/df/17/b3df17c88af0b6e56988d42cb2c35e63.jpg" alt="img">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sint sed eligendi alias minus delectus ea reprehenderit assumenda distinctio dolorem veritatis fugit ducimus ipsam, odit tenetur deserunt, illo explicabo soluta, voluptas reiciendis omnis? Inventore, error?
+            </p>
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt distinctio in qui omnis? Animi harum commodi assumenda, ipsum quo ut non quisquam expedita doloribus illum quia minima natus accusantium sint molestiae, reprehenderit sequi magnam minus delectus. Distinctio modi nihil quidem nulla earum dicta numquam dolorum cupiditate obcaecati, id nisi iure similique dolore. Earum inventore quo labore corporis aliquam iste possimus necessitatibus voluptatibus dolorum? Quisquam ab, est, minus nulla blanditiis iusto tempora unde maiores perspiciatis quae, dolor quo ad dicta ipsum dolores. Architecto fugiat eaque, et perferendis neque reiciendis itaque cum at unde ad distinctio aliquam nostrum quos ullam sequi dolore vel placeat repellat saepe inventore aperiam tempora, fuga nam ipsum? Voluptas nihil inventore magnam dolorum dolorem quas quaerat molestias corrupti non odio est amet incidunt ex voluptatibus, ipsa, nesciunt unde labore. Deleniti.</div>
+        <div class="card">Card3</div>
+    </div>
+    
+</body>
+</html>
